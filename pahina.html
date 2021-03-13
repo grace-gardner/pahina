@@ -4,18 +4,15 @@
     <title>Free web designs</title>
     <style>
         body{
-           background-color: black;
+            background-color: none;
         }
         header{
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(header%20background.jpg);
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(IMG_4963.JPG);
             height: 100vh;
-            width: 100vw;
+            width: auto;
             background-size: cover;
-            background-position:center;
+            background-position: center;
             background-attachment: fixed;
-            background-repeat: no-repeat;
-        }
-            
             
              
         }
@@ -27,7 +24,7 @@
         
         .content{
             width: 100%;
-            max-width: 800px;
+            max-width: 1120px;
             margin: 0 auto;
             padding: 0 0px;
             box-sizing: border-box;
@@ -35,7 +32,7 @@
         }
         
         .content.wide{
-            max-width: 1000px;
+            max-width: 1250px;
             
             
         }
@@ -128,26 +125,7 @@
             top: 0;
         }
         
-        section{
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(header%20background.jpg);
-            height: 100vh;
-            width: 100vw;
-            background-size:cover;
-            background-position:center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            max-width: inherit;
-            
-        }
         
-        #why {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-color: darkgoldenrod;
-        }
         
         
         
@@ -163,24 +141,45 @@
             font-family: Georgia, serif, "sans-serif";
             font-weight: 30px;
             color:dimgray;
+            transition: 30s ease-out;
         }
-        
-
-        
+        .heading1:hover{
+            transition: color 30s ease-out;
+        }
+        section{
+            background-color: none;
+            height: 100vh;
+            width: auto;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: background-color 5s ease-out;
             
-        
-        
-        .heading2{
-            font-family: lato, "georgia", sans-serif;
+        }
+        #why {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .button{
             font-size: 20px;
-            color:white;
-            background-color: #404040;
-            border: 1px solid #555;
-            border-color: darkgoldenrod;
-            
+            font-weight: 400;
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 3px;
+            transition: background-color 5s ease-out;
             
         }
-       
+        .gold{
+            background-color: dimgrey;
+            border: 5px solid darkgoldenrod;
+            
+        }
        
         
         
@@ -244,10 +243,9 @@
         </div> <!--This is the first container-->
     
     </header>
-    <section class="why">
-        <div class="center-text conten wide">
-            <h2 style="color: aliceblue; font-family: sans-serif; font-weight: 100; font-size: 15px;">Why?</h2>
-            
+    <section id="why">
+        <div class="center-text">
+            <h2 class="heading2 button gold">Why?</h2>
         </div>
             
         
