@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Free web designs</title>
+    <style>
+        body{
+            background-color: none;
+        }
+        header{
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(IMG_4963.JPG);
+            height: 100vh;
+            width: auto;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+             
+        }
+      
+        header .content{
+            height: 100%;
+            width: 100%;
+        }
+        
+        .content{
+            width: 100%;
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 0px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        .content.wide{
+            max-width: 1250px;
+            
+            
+        }
+        
+        .brand{
+            float: left;
+            position: relative;
+            margin: 0px 0;
+        }
+
+        .logo-wrap{
+            display: inline-block;
+            border: 2px solid darkgoldenrod;
+            border-radius: 14px;
+
+        }
+
+        .logo {
+            width: 65px;
+            vertical-align: middle;
+        }
+
+        .name{
+            font-size: 65px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .first-name {
+            color:darkgoldenrod;
+
+        }
+        .last-name {
+            color:darkgoldenrod;
+        }
+        .menu{
+            font-family: "lato", sans-serif;
+            text-transform: uppercase;
+            position: relative;
+            margin: 0px 0px 0px 300px;
+        }
+        .menu ul{
+            list-style-type:none;
+            padding: 1px;
+            margin: 0;
+        }
+        .menu li{
+            display: inline-block;
+            margin: 80px 0px 0px 190p;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .menu a{
+            font-size: 10px;
+            font-weight: 400;
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .menu a span{
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            box-sizing: border-box;
+            height: 40px;
+            transition: top .5s ease-out;
+            top: 0;
+        }
+        .menu .default{
+            background-color: #404040;
+            border: 1px solid #555;
+            border-top-color:darkgoldenrod;
+            display: inline-block;
+        }
+        
+        .menu a:hover .default{
+            top: 41px;
+        }
+        .menu .over{
+            position: absolute;
+            left: 0;
+            top: -41px;
+            background-color: darkgoldenrod;
+            border: 1px solid darkgoldenrod;
+        }
+        .menu a:hover .over{
+            top: 0;
+        }
+        
+        
+        
+        
+        
+        .center-text{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .heading1{
+            font-family: Georgia, serif, "sans-serif";
+            font-weight: 30px;
+            color:dimgray;
+            transition: 30s ease-out;
+        }
+        .heading1:hover{
+            transition: color 30s ease-out;
+        }
+        section{
+            background-color: none;
+            height: 100vh;
+            width: auto;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: background-color 5s ease-out;
+            
+        }
+        #why {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .button{
+            font-size: 20px;
+            font-weight: 400;
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 3px;
+            transition: background-color 5s ease-out;
+            
+        }
+        .gold{
+            background-color: dimgrey;
+            border: 5px solid darkgoldenrod;
+            
+        }
+       
+        
+        
+        
+        
+        
+    
+    </style>
+</head>
+<body>
+    <!-- Notes to self -->
+    <!-- (1) When targeting CLASSES inside the same element ie. class= "content wide" inside first container div, in styling it is written .content (no space) .wide -->
+    <!-- (2) When targeting CLASSES inside another element ie "default". this class is inside the <a href> which is inside the <li> which is inside <ul> which is inside <nav> element that has a class of "menu". So when styling, first you have to target the parent class "menu" (.menu) then space, then target "default" (.default) -->
+    <!-- (3) When targeting an ELEMENT inside another element ie the <a> element is inside the <nav element with a class "menu". First, target the class "menu" (.menu) then space, then a (because the element starts with <a> tag). If you want to target a third element in the "menu" ie <span> then it's .menu (space) a (space) span -->
+
+
+    
+    
+    
+    <header>
+        <div class="content wide"> <!--This is the frist container-->
+            <div class="brand"> <!--This is the second container-->
+                <div class="logo-wrap"> <!--This is the third container-->
+                    <img class="logo" src="20210228_093058.png" alt="logo image"/>                
+                </div><!--This is the third conatiner-->
+                <span class="name">
+                    <span class="first-name">Grace</span><span class="last-name"> Gardner</span>
+                </span>
+            
+            
+            
+            </div> <!--This is the second container-->
+       
+            <div class="center-text">
+                <div class="take-me-there">
+                    <h1 class="heading1">Create and design your very own <i><em>B</em>eautiful</i> web page</h1>
+                    <nav class="menu">
+                        <ul>
+                            <li>
+                                <a href="#why">
+                                    <span class="default">Why</span>
+                                    <span class="over">Why</span></a></li>
+                    
+                            <li>
+                                <a href="#inspireme">
+                                    <span class="default">Inspire Me</span>
+                                    <span class="over">Inspire Me</span></a></li>
+                    
+                            <li>
+                                <a href="#Show Me">
+                                    <span class="default">Show Me</span>
+                                    <span class="over">Show Me</span></a></li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+                
+              
+            </div>
+        
+        </div> <!--This is the first container-->
+    
+    </header>
+    <section id="why">
+        <div class="center-text">
+            <h2 class="heading2 button gold">Why?</h2>
+        </div>
+            
+        
+        
+        
+        
+        
+        
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
