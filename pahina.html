@@ -9,7 +9,7 @@
         header{
             background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(IMG_4963.JPG);
             height: 100vh;
-            width: 50;
+            max-width: 100wh;
             background-size:contain;
             background-position:center;
             background-attachment: fixed;
@@ -126,7 +126,21 @@
             top: 0;
         }
         
+        section{
+            height: 50vh;
+            width: 50;
+            background-size:contain;
+            background-position:center;
+            background-attachment: fixed;
+        }
         
+        #why {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         
         
         
@@ -142,43 +156,18 @@
             font-family: Georgia, serif, "sans-serif";
             font-weight: 30px;
             color:dimgray;
-            transition: 30s ease-out;
         }
-        .heading1:hover{
-            transition: color 30s ease-out;
-        }
-        section{
-            background-color: none;
-            height: 100vh;
-            width: auto;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            transition: background-color 5s ease-out;
+        
+
+        
             
-        }
-        #why {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        .button{
+        
+        
+        .heading2{
+            font-family: lato, "georgia", sans-serif;
             font-size: 20px;
-            font-weight: 400;
-            text-decoration: none;
-            margin: 10px;
-            padding: 10px 20px;
-            display: inline-block;
-            border-radius: 3px;
-            transition: background-color 5s ease-out;
+            color:white;
             
-        }
-        .gold{
-            background-color: dimgrey;
-            border: 5px solid darkgoldenrod;
             
         }
        
@@ -244,7 +233,7 @@
         </div> <!--This is the first container-->
     
     </header>
-    <section id="why">
+    <section class="why">
         <div class="center-text">
             <h2 class="heading2 button gold">Why?</h2>
         </div>
