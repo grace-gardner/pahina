@@ -10,6 +10,25 @@
         .paragraph{
             color:cornsilk;
             text-align: center;
+            display: inline-block;
+            width: 75%;
+            margin: 0 auto;
+            
+            
+        }
+        .center-paragraph{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .button.to-top{
+            color: white;
+            background-color: dimgrey;
+            padding: 5px 12px 5px 2px;
+            border-radius: 3px;
         }
         .button .arrows:before{
             content:"\00BB";
@@ -18,17 +37,15 @@
             font-size: 20px;
             display: inline-block;
             transform: rotate(270deg);
+            line-height: 20px;
+            vertical-align: middle;
+            margin-left: 7px;
         }
-        .button.to-top{
-            color: white;
-            background-color: dimgrey;
-            padding: 5px 12px 5px 2px;
-            border-radius: 3px;
-        }
+      
         header{
             background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(IMG_4963.JPG);
             height: 100vh;
-            max-width: 400;
+            max-width: 500;
             background-size: contain;
             background-position: center;
             background-attachment: fixed;
@@ -163,14 +180,12 @@
             color:dimgray;
             
         }
-        .heading1:hover{
-            
-        }
+    
         #why{
             background-color:none;
             background-image: url(IMG_5019.JPG);
             height: 100vh;
-            max-width: 400;
+            max-width: 800;
             background-size: contain;
             background-position: center;
             background-attachment: fixed;
@@ -214,9 +229,9 @@
         }
         #inspire-me{
             background-color:none;
-            background-image: url(IMG_4963.JPG);
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(IMG_4963.JPG);
             height: 100vh;
-            max-width: 400;
+            max-width: 800;
             background-size: contain;
             background-position: center;
             background-attachment: fixed;
@@ -235,7 +250,7 @@
             background-color:none;
             background-image: url(IMG_5019.JPG);
             height: 100vh;
-            max-width: 400;
+            max-width: 800;
             background-size: contain;
             background-position: center;
             background-attachment: fixed;
@@ -311,12 +326,19 @@
             <div class="center-text">
                 <h2 class="heading2 button gold">Why</h2>
                 <a href="" class="button to-top" title="Back to top of page">
-                    <span class="arrows up"></span>
+                    <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.-->                
                 </a>
+           </div>
+            <div class="content">
+                <div class="center-text">
+                    <p class="paragraph">HTML stands for Hyper Text Markup Language. It is a language for writing web pages using codes. When you right click a web page and click INSPECT, you will see how the page is written in codes. The web browser translates these codes into the images, texts, links etc. that you see on that page.</p>
+                </div>
                 
             </div>
-            <p class="paragraph">HTML stands for Hyper Text Markup Language. It is a language for writing web pages using codes. When you right click a web page and click INSPECT, you will see how the page is written in codes. The web browser translates these codes into the images, texts, links etc. that you see on that page.</p><br>
+            
         </div>
+        
+            
                 
         
         
@@ -336,9 +358,13 @@
                     <span class="arrows up"></span>
                 </a>
             </div>
-            <p class="paragraph">HTML stands for Hyper Text Markup Language. It is a language for writing web pages using codes. When you right click a web page and click INSPECT, you will see how the page is written in codes. The web browser translates these codes into the images, texts, links etc. that you see on that page.</p><br>
-            
+            <div class="content">
+                <div class="center-text">
+                    <p class="paragraph">HTML stands for Hyper Text Markup Language. It is a language for writing web pages using codes. When you right click a web page and click INSPECT, you will see how the page is written in codes. The web browser translates these codes into the images, texts, links etc. that you see on that page.</p>
+                </div>
         </div>
+        </div>
+            
     
     </section>
     
@@ -349,10 +375,17 @@
                 <a href="" class="button to-top" title="Back to top of page">
                     <span class="arrows up"></span>
                 </a>
+                
             </div>
-            <p class="paragraph">HTML stands for Hyper Text Markup Language. It is a language for writing web pages using codes. When you right click a web page and click INSPECT, you will see how the page is written in codes. The web browser translates these codes into the images, texts, links etc. that you see on that page.</p><br>
-            
+            <div class="content">
+                <div class="center-text">
+                    <p class="paragraph">HTML stands for Hyper Text Markup Language. It is a language for writing web pages using codes. When you right click a web page and click INSPECT, you will see how the page is written in codes. The web browser translates these codes into the images, texts, links etc. that you see on that page.</p>
+                </div>
         </div>
+        </div>
+            
+            
+        
     </section>
     
     
