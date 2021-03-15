@@ -51,8 +51,18 @@
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
+            animation-name: flip;
+            animation-duration: 3s;
+            animation-timing-function:ease-in-out;
+            animation-iteration-count:infinite;
             
              
+        }
+        header .take-me-there{
+            animation-name: flip;
+            animation-duration: 3s;
+            animation-timing-function:ease-in-out;
+            animation-iteration-count:infinite;
         }
       
         header .content{
@@ -112,6 +122,18 @@
             position: relative;
             margin: 10px 0px 0px 350px;
         }
+        .menu .hamburger-menu div{
+            background-color: darkgoldenrod;
+            width: 22px;
+            height: 2px;
+            margin: 5px 0;
+        }
+        .menu .hamburger-menu{
+            float: right;
+            display:none;
+            position: relative;
+        }
+        
         .menu ul{
             list-style-type:none;
             padding: 1px;
@@ -334,6 +356,23 @@
             text-transform:
             
         }
+        /*Responsiveness==*/
+        /*Tablet==*/
+        @media only screen and (max-width:1020px){
+            .menu .hamburger-menu{
+                display: block;
+            }
+            .menu li{
+                float: none;
+                text-align: right;
+            }
+           
+            
+        }
+        /*Mobile==*/
+        @media only screen and (max-width:768px){
+            
+        }
         
         
         
@@ -352,49 +391,56 @@
     
     
     
-    <header>
-        <div class="content wide"> <!--This is the frist container-->
-            <div class="brand"> <!--This is the second container-->
-                <div class="logo-wrap"> <!--This is the third container-->
-                    <img class="logo" src="20210228_093058.png" alt="logo image"/>                
-                </div><!--This is the third conatiner-->
-                <span class="name">
-                    <span class="first-name">Grace</span><span class="last-name"> Gardner</span>
-                </span>
-            
-            
-            
-            </div> <!--This is the second container-->
-       
-            <div class="center-text">
-                <div class="take-me-there">
-                    <h1 class="heading1">Create and design your very own <i><em>B</em>eautiful</i> web page</h1>
-                    <nav class="menu">
-                        <ul>
-                            <li>
-                                <a href="#why">
-                                    <span class="default">Why</span>
-                                    <span class="over">Why</span></a></li>
-                    
-                            <li>
-                                <a href="#inspire-me">
-                                    <span class="default">Inspire Me</span>
-                                    <span class="over">Inspire Me</span></a></li>
-                    
-                            <li>
-                                <a href="#show-me">
-                                    <span class="default">Show Me</span>
-                                    <span class="over">Show Me</span></a></li>
-                        </ul>
-                    </nav>
-            
+    <header class="take-me-there">
+        <div class="take-me-there">
+            <div class="content wide"> <!--This is the frist container-->
+                <div class="brand"> <!--This is the second container-->
+                    <div class="logo-wrap"> <!--This is the third container-->
+                        <img class="logo" src="20210228_093058.png" alt="logo image"/>                
+                    </div><!--This is the third conatiner-->
+                    <span class="name">
+                        <span class="first-name">Grace</span><span class="last-name"> Gardner</span>
+                    </span>
+
+
+
+                </div> <!--This is the second container-->
+
+                <div class="center-text">
+                    <div class="take-me-there">
+                        <h1 class="heading1">Create and design your very own <i><em>B</em>eautiful</i> web page</h1>
+                        <nav class="menu">
+                            <div class="hamburger-menu">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#why">
+                                        <span class="default">Why</span>
+                                        <span class="over">Why</span></a></li>
+
+                                <li>
+                                    <a href="#inspire-me">
+                                        <span class="default">Inspire Me</span>
+                                        <span class="over">Inspire Me</span></a></li>
+
+                                <li>
+                                    <a href="#show-me">
+                                        <span class="default">Show Me</span>
+                                        <span class="over">Show Me</span></a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+
                 </div>
-                
-              
+
             </div>
-        
-        </div> <!--This is the first container-->
-    
+        </div><!--This is the first container-->
+
     </header>
     
     <section id="why" id="#why">
