@@ -181,20 +181,24 @@
             color:dimgray;
             
         }
-        .take-me-there:hover .heading1{
+        .take-me-there .heading1{
             animation-name: flip;
-            animation-duration: 0.2s;
+            animation-duration: 5s;
             animation-timing-function: linear;
-            animation-iteration-count: infinite;
+            animation-iteration-count:none;
             
         }
         @keyframes flip{
             0%{
-                transform:rotate(0deg);
-                
-            }
+                background-color: aliceblue;}
+            25%{
+                background-color: coral;}
+            50%{
+                background-color: chartreuse;}
+            75%{
+                background-color: darkgoldenrod;}
             100%{
-                transform: rotate(360deg);
+                background-color: dimgrey;
             }
         }
     
