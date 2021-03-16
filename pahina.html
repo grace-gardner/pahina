@@ -1,657 +1,88 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Pahina</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body{
-            background-color: none;
-        }
-        
-        .paragraph{
-            color:black;
-            text-align: center;
-            display: inline-block;
-            width: 75%;
-            margin: 0 auto;
-            
-            
-        }
-        .button{
-            font-size: 20px;
-            font-weight: 400;
-            text-decoration: none;
-            margin: 10px;
-            padding: 10px 20px;
-            display: inline-block;
-            position: relative;
-            border-radius: 3px;
-            
-        }
-        {
-            animation-name: flip;
-            animation-duration: 2s;
-            animation-timing-function:ease-in-out;
-            animation-iteration-count:infinite;
-        }
-        .gold{
-            background-color: dimgrey;
-            border: 1px solid darkgoldenrod;
-            
-        }
-        
-        .button.to-top{
-            color: white;
-            background-color: dimgrey;
-            padding: 5px 12px 5px 2px;
-            border-radius: 3px;
-            background-color: dimgrey;
-            border: 1px solid darkgoldenrod;
-        }
-        
-        .button .arrows:before{
-            content:"\00BB";
-        }
-        .button .arrows{
-            font-size: 20px;
-            display: inline-block;
-            transform: rotate(270deg);
-            line-height: 20px;
-            vertical-align: middle;
-            margin-left: 7px;
-        }
-        
-      
-        header{
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(header%20background4.jpg);
-            background-color: black;
-            height: 100vh;
-            max-width: 500;
-            background-size: contain;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            
-        }
-        
-      
-        header .content{
-            height: 100%;
-            width: 100%;
-        }
-        
-        .content{
-            width: 100%;
-            max-width: 1120px;
-            margin: 0 auto;
-            padding: 0 0px;
-            box-sizing: border-box;
-            position: relative;
-        }
-        
-        .content.wide{
-            max-width: 1250px;
-            
-            
-        }
-        
-        .brand{
-            float: left;
-            position: relative;
-            margin: 0px 0;
-            margin-right: 2px;
-        }
-
-        .logo-wrap{
-            display: inline-block;
-            border: 2px solid darkgoldenrod;
-            border-radius: 14px;
-
-        }
-
-        .logo {
-            width: 65px;
-            vertical-align: middle;
-        }
-
-        .name{
-            font-size: 65px;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-        .first-name {
-            color:darkgoldenrod;
-
-        }
-        .last-name {
-            color:darkgoldenrod;
-        }
-        .menu{
-            font-family: "lato", sans-serif;
-            text-transform: uppercase;
-            position: relative;
-            margin: 10px 0px 0px 275px;
-            float:left;
-        }
-        
-        
-        .menu ul{
-            list-style-type:none;
-            padding: 1px;
-            margin: 0;
-            
-        }
-        .menu li{
-            display: inline-block;
-            margin: 80px 0px 0px 190p;
-            align-items: center;
-            justify-content: center;
-            
-            
-        }
-        .menu a{
-            font-size: 10px;
-            font-weight: 400;
-            display: inline-block;
-            position: relative;
-            text-decoration: none;
-            color: #ffffff;
-            overflow: hidden;
-        }
-        .menu a span{
-            position: relative;
-            display: inline-block;
-            padding: 10px;
-            box-sizing: border-box;
-            height: 40px;
-            transition: top .5s ease-out;
-            top: 0;
-            animation-name: flip;
-            animation-duration: 2s;
-            animation-timing-function:ease-in-out;
-            animation-iteration-count:infinite;
-            
-        }
-        @keyframes flip{
-            0%{
-                color: floralwhite;}
-            25%{
-                color: darkgray;}
-            50%{
-                color:burlywood;}
-            75%{
-                color: darkgoldenrod;}
-            100%{
-                color: dimgrey;}
-        }
-        
-        .menu .default{
-            background-color: black;
-            border: 1px solid #555;
-            border-top-color:darkgoldenrod;
-            display: inline-block;
-        }
-        
-        .menu a:hover .default{
-            top: 41px;
-        }
-        .menu .over{
-            position: absolute;
-            left: 0;
-            top: -41px;
-            background-color: darkgoldenrod;
-            border: 1px solid darkgoldenrod;
-        }
-        .menu a:hover .over{
-            top: 0;
-        }
-        
-        
-        
-        
-        
-        .center-text{
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .heading1{
-            font-family: Georgia, serif, "sans-serif";
-            font-weight: 30px;
-            color:dimgray;
-            margin-right: 2px;
-            
-        }
-        .take-me-there .heading1{
-            animation-name: none;
-            animation-duration: 2s;
-            animation-timing-function:ease-in-out;
-            animation-iteration-count:infinite;
-            
-        }
-        
-        
+<html lang="en">
+<meta charset="UTF-8">
+<title>Pahina Training Page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        color: darkgoldenrod;}
         
     
-        #why{
-            background-color:none;
-            background-image:none;
-            height: 100vh;
-            max-width: 800;
-            background-size: contain;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            
-        }
-        .why {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            
-        }
-        
-        .heading2{
-            font-size: 10px;
-            font-weight: 400;
-            display: inline-block;
-            position: relative;
-            text-decoration: none;
-            color: #ffffff;
-            overflow: hidden;
-            
-        }
-        #inspire-me{
-            background-color:none;
-            background-image: none;
-            height: 100vh;
-            max-width: 800;
-            background-size: contain;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-        }
-        .inspire-me{
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            
-        }
-        #show-me{
-            background-color:none;
-            background-image:none;
-            height: 100vh;
-            max-width: 800;
-            background-size: contain;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            
-        }
-        footer{
-            background-color: dimgray;
-            color:black;
-            padding: 15px;
-        }
+  
+      .header-right {
+        float: none;}
+    }
     
-        .footer-menu{
-            list-style-type: none;
+    .header-right a{
+        text-decoration: none;
+        color: darkgoldenrod;}
+        
+    }
+    
+    @media screen and (max-width: 500px){
+        .section1 p{
             float: left;
-            margin: 10px 0;
-            padding: 0;
-        }
-        .footer-menu li{
-            float: left;
-            margin: 5px 8px;
-        }
-        .footer-menu a{
-            text-transform: uppercase;
-            color: black;
-            text-decoration: none;
-            border-bottom: 2px solid darkgoldenrod;
-            transition: color 1s ease-out border, border-color 2s ease-out;
-        }
-        .footer-menu a:hover{
-            color: aliceblue;
-            border-color: aliceblue;
-        }
-        .social-menu{
-            list-style-type: none;
-            float: right;
-            margin: 10px 0;
-            padding: 0;
-        }
-        .social-menu li{
-            float: right;
-            margin: 5px 8px;
-            
-        }
-        .social-menu a{
-            text-transform: uppercase;
-            color: black;
-            text-decoration: none;
-            border-bottom: 2px solid darkgoldenrod;
-            transition: color 1s ease-out border, border-color 2s ease-out;
-            
-        }
-        .social-menu a:hover{
-            color: aliceblue;
-            border-color: aliceblue;
-            
-        }
-        footer p{
-            text-align: center;
-            text-transform:
-            
-        }
-        /*Responsiveness==*/
-        /*Tablet==*/
-        @media only screen and (max-width:500px){
-            .header .brand{
-                float: none;
-                display: block;
-                text-align: left;
-            }
-           
-            
-        }
-        /*Mobile==*/
-        @media only screen and (max-width:500px){
-            
-        }
-        .take-me-there .menu1{
-            animation-name: flash;
-            animation-duration: 2s;
-            animation-timing-function:ease-in-out;
-            animation-iteration-count:infinite;
-        }
-        @keyframes flash{
-            0%{
-                color: aliceblue;}
-            25%{
-                color: darkgray;}
-            50%{
-                color:burlywood;}
-            75%{
-                color: darkgoldenrod;}
-            100%{
-                color: dimgrey;}
-            
-        }
-        .button1 a span{
-            animation-name: flash;
-            animation-duration: 2s;
-            animation-timing-function:ease-in-out;
-            animation-iteration-count:infinite;
-            
-        }
-        @media screen and (max-width: 500px) {
-          .header .name {
-            float: none;
             display: block;
             text-align: left;
-            text-decoration: none;
-            color: darkgoldenrod;}
-            
-            .header a{
-                float: none;
-                display: inline-block;
-                text-align: left;
-                text-decoration: none;
-                color: darkgoldenrod;}
-            }
-        
-        
-        
-        
-        
-        
+        }
+    }
     
-    </style>
-</head>
+
+    
+   
+   
+    
+    
+    
+    
+</style>
+
+
 <body>
-    <!-- Notes to self -->
-    <!-- (1) When targeting CLASSES inside the same element ie. class= "content wide" inside first container div, in styling it is written .content (no space) .wide -->
-    <!-- (2) When targeting CLASSES inside another element ie "default". this class is inside the <a href> which is inside the <li> which is inside <ul> which is inside <nav> element that has a class of "menu". So when styling, first you have to target the parent class "menu" (.menu) then space, then target "default" (.default) -->
-    <!-- (3) When targeting an ELEMENT inside another element ie the <a> element is inside the <nav element with a class "menu". First, target the class "menu" (.menu) then space, then a (because the element starts with <a> tag). If you want to target a third element in the "menu" ie <span> then it's .menu (space) a (space) span -->
+ <header>
+  <div class="header" style="overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;"><img src="20210228_093058.png" style="float: left; width: 65px; display: inline-block;
+            border: 2px solid darkgoldenrod;
+            border-radius: 14px;
+"/>
+  <a href="#default" style="float: left;
+  color: darkgoldenrod;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 25px; 
+  line-height: 25px;
+  border-radius: 4px;">Grace Gardner</a>
 
+  <!--This is for the nav menu-->
+  <div class="header-right" style="float: right;">
+    <a href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+     </div>
+</header>
+<section class="section1">
+    <div>
+        <p style="text-align: center; color: dimgray; font-size: 30px;">Create and design your own web page</p>
+            <nav class="navbar" style="overflow: hidden; background-color: none; position: relative; text-align: center;">
+              <a href="#why">Why</a>
+              <a href="#inspire-me">Inspire Me</a>
+              <a href="#show-me">Show Me</a>
+        </nav>
+    </div>
+    
+</section>
 
-    
-    
-    
-    <header>
-        <div class="header">
-            <div class="content wide"> <!--This is the frist container-->
-                <div class="brand"> <!--This is the second container-->
-                    <div class="logo-wrap"> <!--This is the third container-->
-                        <img class="logo" src="20210228_093058.png" alt="logo image"/>                
-                    </div><!--This is the third conatiner-->
-                    <span class="name">
-                        <span class="first-name">Grace</span><span class="last-name"> Gardner</span>
-                    </span>
-
-
-
-                </div> <!--This is the second container-->
-
-                <div class="center-text">
-                    <div class="take-me-there">
-                        <h1 class="heading1">Create and design your very own web page</h1>
-                    <div class="take-me-there">
-                        <nav class="menu menu1">
-                          
-                           
-                            <ul>
-                                <li>
-                                    <a href="#why">
-                                        <span class="default">Why</span>
-                                        <span class="over">Why</span></a></li>
-
-                                <li>
-                                    <a href="#inspire-me">
-                                        <span class="default">Inspire Me</span>
-                                        <span class="over">Inspire Me</span></a></li>
-
-                                <li>
-                                    <a href="#show-me">
-                                        <span class="default">Show Me</span>
-                                        <span class="over">Show Me</span></a></li>
-                            </ul>
-                            
-                        </nav>
-                        </div>
-                    
-
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div><!--This is the first container-->
-
-    </header>
-    
-    <section id="why" id="#why">
-        <div class="content">
-            <div class="center-text">
-                <h2 class="heading2 button gold">Why</h2>
-           </div>
-            <div class="content">
-                <div class="center-text">
-                    <p class="paragraph">In this part, I will explain why it is better to create and design your web page by hand-coding your HTML and CSS. I will also add links from other sites/blogs where more information can be found.</p>
-                    
-                </div>
-                <div class="content">
-                    <div class="center-text">
-                       <div class="button1">
-                            <a href="" class="button to-top" title="Back to top of page">
-                                <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.-->                
-                        </a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-            </div>
-            
-        </div>
-        
-            
-                
-        
-        
-    
-    
-    
-    
-    
-    
-    </section>
-    
-    <section id="inspire-me" id="#inspire-me">
-        <div class="content">
-            <div class="center-text">
-                <h2 class="heading2 button gold">Inspire Me</h2>
-                
-            </div>
-            <div class="content">
-                <div class="center-text">
-                    <p class="paragraph">Here, I will attach images of my web page templates to show examples of different designs. I will also linked those images to the actual web page so the source codes can be viewed.</p>
-                </div>
-                  <div class="content">
-                    <div class="center-text">
-                       <div class="button1">
-                            <a href="" class="button to-top" title="Back to top of page">
-                                <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.-->                
-                        </a>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        </div>
-            
-    
-    </section>
-    
-    <section id="show-me" id="#show-me">
-        <div class="content">
-            <div class="center-text">
-                <h2 class="heading2 button gold">Show Me</h2>
-                
-                
-            </div>
-            <div class="content">
-                <div class="center-text">
-                    <p class="paragraph">Finally, I will add a tutorial video of how the codes from my templates can be viewed, copied, recreated and changed to personal taste and preference. I will also show how the images and logos can be replaced from your own collection on your computer.</p>
-                </div>
-                  <div class="content">
-                    <div class="center-text">
-                       <div class="button1">
-                            <a href="" class="button to-top" title="Back to top of page">
-                                <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.-->                
-                        </a>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        </div>
-            
-            
-        
-    </section>
-    
-    <footer>
-        <div class="content wide">
-            <div class="row">
-                <ul class="footer-menu">
-                    <li>
-                        <a href="https://grace-gardner.github.io/cartoon-hero/test.html" target="_blank">Blog</a>
-                    </li>
-                </ul>
-                <ul class="social-menu">
-                    <li>
-                        <a href="https://www.facebook.com/My-HTML-and-CSS-Coding-Journal-110332504444278" target="_blank" title="facebook">Facebook</a>
-                    </li>
-                </ul>
-                
-            </div>
-            <p class="final-note">&copy; 2021 Pahina. All rights reserved.</p>
-        </div>
-    </footer>
-    
-    
    
+     
     
-    
-    
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 </body>
 </html>
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
