@@ -148,7 +148,7 @@
             
         }
     .gold{
-            background-color:darkgray;
+            background-color: none;
             border: 1px solid darkgoldenrod;
             
         }
@@ -188,10 +188,10 @@
         }
     .button.to-top{
             color: white;
-            background-color: dimgrey;
+            background-color: black;
             padding: 5px 12px 5px 2px;
             border-radius: 3px;
-            background-color: dimgrey;
+            background-color: black;
             border: 1px solid darkgoldenrod;
         }
     .button .arrows:before{
@@ -282,9 +282,42 @@
             text-transform:
             
         }
+    
+    p {
+        color:;
+        font-weight: 600;
+        margin-top: 500;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 100px;
+    }
+    .url {
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+    }
         
     
-    
+    img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 
     
    
@@ -354,8 +387,9 @@
     <div class="center-text">
         <h2 class="heading2 gold">Why</h2>
     </div>
+    <div></div>
     <div>
-        <p style="text-align: center; font-weight:bold;">In this part, I will explain why it is better to create and design your web page by hand-coding your HTML and CSS. I will also add links from other sites/blogs where more information can be found.</p>
+        <p style="text-align: center;">In this part, I will explain why it is better to create and design your web page by hand-coding your HTML and CSS. I will also add links from other sites/blogs where more information can be found.</p>
     </div>
     <div class="button1 center-text" >
                             <a href="" class="button to-top" title="Back to top of page">
@@ -368,6 +402,7 @@
    <div class="center-text">
        <h2 class="heading2 gold">Inspire Me</h2>
    </div>
+   <div></div>
    <div>
        <p style="text-align: center;">Here, I will attach images of my web page templates to show examples of different designs. I will also linked those images to the actual web page so the source codes can be viewed.</p>
    </div>
@@ -383,8 +418,9 @@
     <div class="center-text">
        <h2 class="heading2 gold">Show Me</h2>
     </div>
+    <div></div>
     <div>
-        <p style="text-align: center;">Finally, I will add a tutorial video of how the codes from my templates can be viewed, copied, recreated and changed to personal taste and preference. I will also show how the images and logos can be replaced from your own collection on your computer.</p>
+        <p style="text-align: center; padding-left: 20px; padding-right: 20px;">Finally, I will add a tutorial video of how the codes from my templates can be viewed, copied, recreated and changed to personal taste and preference. I will also show how the images and logos can be replaced from your own collection on your computer.</p>
     </div>
     <div class="button1 center-text" >
                             <a href="" class="button to-top" title="Back to top of page">
