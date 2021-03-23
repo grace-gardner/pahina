@@ -11,61 +11,81 @@
     html {
         scroll-behavior: smooth;
     }
-
-    body{
-        background-image: url(whitebackground.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; position: relative;
+    .content{
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+        position: relative;
+        height: 100vh;
+        height: 100%;
     }
 
-    h3, p {
-        color: darkgoldenrod;
-        font-weight: 800;
+    @media screen and (max-width: 1400px){
+        .content{
+            display: inline-block;
+
+        }
     }
 
-    @media screen and (max-width: 1100px) {
-      .header a {
-        float: left;
-        display: block;
-        text-align: left;
-        text-decoration: none;
-        color: darkgoldenrod;}
-        
-    
-  
-      .header-right {
-        float: left;}
-    }
-    
-    .header-right a{
-        text-decoration: none;
-        color: darkgoldenrod;
-        
-    }
-    .social-menu{
-        float: left;
-        display: block;
-    }
-    
-    @media screen and (max-width: 500px){
-        .section1 p{
+
+    @media screen and (max-width: 1025px) {
+        .header a {
             float: left;
             display: block;
             text-align: left;
-        }
-    }
+            text-decoration: none;
+            color: darkgoldenrod;}
+      
+
+        .header-right {
+            float: left;}
     
-    @media screen and (max-width: 500px){
-        .section1 a{
+    
+        .header-right a{
+            text-decoration: none;
+            color: darkgoldenrod;}
+
+        .social-menu{
             float: left;
-            display: block;
+            display: block;}
+
+        .small-screen{
+            display: none;}
+    } /* end of media screen 1025px */
+
+    @media only screen and (max-width: 500px) {
+        .header a{
+            display: none;}
+
+        .header-right{
+            display: none;}
+
+        .header-right a{
+            display: none;}
+
+        .social-menu{
+            display: none;}
+
+        .small-screen{
+            display: none;}
+    } /* end of media screen 500px */
+
+    @media only screen and (max-width: 430px) {
+        .column{
+            display: none;
         }
-    }
-     @media screen and (max-width: 500px){
-        .section1 p{
-            float: left;
+        .small-screen{
             display: block;
-            text-align: left;
+            text-align: center;
+            font-size: 60px;
         }
-    }
+    } /* end of media screen 430px */
+    
+    /* END OF RESPONSIVENESS */
+
+
     .social-menu a{
     padding: 10px;
     display: inline-block;
@@ -316,50 +336,54 @@ img:hover {
 
 <body style="background-image: url(whitebackground.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
  <header id="default" id="#default">
-    <div class="header" style="overflow: hidden; background-color: none; padding: 20px 10px;"><img src="https://grace-gardner.github.io/pahina/20210228_093058.png" style="float: left; width: 65px; display: inline-block; border: 2px solid darkgoldenrod; border-radius: 14px;"/>
-        <a href="#default" style="float: left; color: darkgoldenrod; text-align: center; padding: 12px; text-decoration: none; font-size: 25px; line-height: 25px; border-radius: 4px;">Grace Gardner</a>
-        <!-------------------------------------------------------------------------------------------------------------------------->
-        <ul class="social-menu" style="padding: 0; list-style-type: none; margin: 7px 0;">
-                    <li style="float: right; margin: 0 2px;">
-                        <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-square" style="color: dimgrey;"></i></a>
-                        
-                    </li>
-                    <li style="float: right; margin: 0 2px;">
-                        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram-square" style="color: dimgrey;"></i></a>
+    <div class="content">
+        <div class="header" style="overflow: hidden; background-color: none; padding: 20px 10px;"><img src="https://grace-gardner.github.io/pahina/20210228_093058.png" style="float: left; width: 65px; display: inline-block; border: 2px solid darkgoldenrod; border-radius: 14px;"/>
+            <a href="#default" style="float: left; color: darkgoldenrod; text-align: center; padding: 12px; text-decoration: none; font-size: 25px; line-height: 25px; border-radius: 4px;">Grace Gardner</a>
+            <!-------------------------------------------------------------------------------------------------------------------------->
+            <ul class="social-menu" style="padding: 0; list-style-type: none; margin: 7px 0;">
+                        <li style="float: right; margin: 0 2px;">
+                            <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-square" style="color: dimgrey;"></i></a>
                             
-                    </li>
-                    <li style="float: right; margin: 0 2px;">
-                        <a href="#" target="_blank" title="Tweeter"><i class="fab fa-twitter-square" style="color: dimgrey;"></i></a>
-                            
-                    </li>
-        </ul>
+                        </li>
+                        <li style="float: right; margin: 0 2px;">
+                            <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram-square" style="color: dimgrey;"></i></a>
+                                
+                        </li>
+                        <li style="float: right; margin: 0 2px;">
+                            <a href="#" target="_blank" title="Tweeter"><i class="fab fa-twitter-square" style="color: dimgrey;"></i></a>
+                                
+                        </li>
+            </ul>
+        </div>
     </div>
 </header>
 
 <section>
-    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(headerpic.jpg); background-repeat: no-repeat; background-size: contain; background-position: center; position: relative; height: 100vh; background-color: black;">
-        <p style="text-align: center; color: dimgray; font-size: 30px; margin-top: px; margin-bottom: px; padding: px;">Create and design your own web page</p>
-        <nav class="menu menu1" style="text-align: center;">
-                          
-                           
-            <ul>
-                <li>
-                    <a href="#why">
-                        <span class="default">Why</span>
-                        <span class="over">Why</span></a></li>
+    <div class="content">
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(headerpic.jpg); background-repeat: no-repeat; background-size: contain; background-position: center; position: relative; height: 100vh; background-color: black;">
+            <p style="text-align: center; color: dimgray; font-size: 30px; margin-top: px; margin-bottom: px; padding: px;">Create and design your own web page</p>
+            <nav class="menu menu1" style="text-align: center;">
+                              
+                               
+                <ul>
+                    <li>
+                        <a href="#why">
+                            <span class="default">Why</span>
+                            <span class="over">Why</span></a></li>
 
-                <li>
-                    <a href="#inspire-me">
-                        <span class="default">Inspire Me</span>
-                        <span class="over">Inspire Me</span></a></li>
+                    <li>
+                        <a href="#inspire-me">
+                            <span class="default">Inspire Me</span>
+                            <span class="over">Inspire Me</span></a></li>
 
-                <li>
-                    <a href="#show-me">
-                        <span class="default">Show Me</span>
-                        <span class="over">Show Me</span></a></li>
-            </ul>
-            
-    </nav>
+                    <li>
+                        <a href="#show-me">
+                            <span class="default">Show Me</span>
+                            <span class="over">Show Me</span></a></li>
+                </ul>
+                
+        </nav>
+        </div>
     </div>
 </section>
     
@@ -370,17 +394,19 @@ img:hover {
     
 
 <section id="why" id="#why" style="height: 100vh; background-image: url(turkey.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-    <div class="center-text">
-        <div>
-        <h3 style="text-align: center;">Why</h3>
-        <p style="text-align: center;">Whoops! Sorry, this page is still under construction...</p>
-        <div class="button1 center-text" >
-            <a href="" class="button to-top" title="Back to top of page">
-                <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.--></a>
-            <a href="#inspire-me" class="button to-top" title="Back to top of page">
-                <span style="vertical-align: center; margin-left: 7px;">Inspire Me</span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.--></a>
-    </div>
-    </div>
+    <div class="content">
+        <div class="center-text">
+            <div>
+            <h3 style="text-align: center;">Why</h3>
+            <p style="text-align: center;">Whoops! Sorry, this page is still under construction...</p>
+            <div class="button1 center-text" >
+                <a href="" class="button to-top" title="Back to top of page">
+                    <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.--></a>
+                <a href="#inspire-me" class="button to-top" title="Back to top of page">
+                    <span style="vertical-align: center; margin-left: 7px;">Inspire Me</span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.--></a>
+        </div>
+        </div>
+        </div>
     </div>
 </section>
 
@@ -388,36 +414,39 @@ img:hover {
 
    
 <section id="inspire-me" id="#inspire-me" style="height: 100vh; background-image: url(cyprus.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-    <div class="center-text">
+    <div class="content">
         <div class="center-text">
-            <div>
-            <h3 style="text-align: center;">Inspire Me</h3>
-            <p style="text-align: center;">Below is a template for a pretend Jewellery shop. It's a very basic main page but you can see the coding for this site by right clicking the web page and selecting 'View page source'. You can copy all the codes to recreate the page to use on your own website.</p>
-                <div class="center-text">
-                <div class="column">
-                    <div class="card" class="shop" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 160px;
-  margin: auto;
-  text-align: center;
-  font-family: arial; padding: 15px; display: ;">
-                    <a href="https://grace-gardner.github.io/template1/index.html" target="_blank">
-                        <img src="https://grace-gardner.github.io/template1/headerbackground.jpg" alt="product-image" style="width:100%">
-                    </a>
+            <div class="center-text">
+                <div>
+                <h3 style="text-align: center;">Inspire Me</h3>
+                <p style="text-align: center;">Below is a template for a pretend Jewellery shop. It's a very basic main page but you can see the coding for this site by right clicking the web page and selecting 'View page source'. You can copy all the codes to recreate the page to use on your own website.</p>
+                    <div class="center-text">
+                    <div class="column">
+                        <div class="card" class="shop" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      width: 160px;
+      margin: auto;
+      text-align: center;
+      font-family: arial; padding: 15px; display: ;">
+                        <a href="https://grace-gardner.github.io/template1/index.html" target="_blank">
+                            <img src="https://grace-gardner.github.io/template1/headerbackground.jpg" alt="product-image" style="width:100%">
+                        </a>
+                    
+                    </div>
                 
-                </div>
-            <div class="button1 center-text">
-                    <a href="" class="button to-top" title="Back to top of page">
-                    <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.--></a>
-                    <a href="#show-me" class="button to-top" title="Back to top of page">
-                    <span style="vertical-align: center; margin-left: 7px;">Show Me</span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.--></a>
-            </div>
-            
+                
 
-                
+                    
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="button1 center-text">
+                        <a href="" class="button to-top" title="Back to top of page">
+                        <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.--></a>
+                        <a href="#show-me" class="button to-top" title="Back to top of page">
+                        <span style="vertical-align: center; margin-left: 7px;">Show Me</span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.--></a>
+                </div>
 </div>
 </section>
     
@@ -428,46 +457,52 @@ img:hover {
 
 <!------------------------------------------------------------------------------------->
 
-<section id="show-me" id="#show-me" style="height: 130vh; background-image: url(boracay.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-    <div>
-        <div class="center-text">
-        <div>
-        <h3 style="text-align: center;">Show Me</h3>
-        <p style="text-align: center;">Below are tutorial videos of how you can copy and recreat the web page.</p>
+<section id="show-me" id="#show-me" style="height: 200vh; background-image: url(boracay.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <div class="content">
+        <div class="content">
             <div class="center-text">
-                <div class="column">
-                    <video class="column" style="height: 200px; width: 220px; padding: 20px;" controls>Your browser does not support the &lt;video&gt; tag.
-                        <source src="https://grace-gardner.github.io/pahina/TutorialVideo.mp4"/></video>
+            <div>
+            <h3 style="text-align: center;">Show Me</h3>
+            <p style="text-align: center;">Below are tutorial videos of how you can copy and recreat the web page.</p>
+            <p class="small-screen">Sorry! Your screen is too small for this page!</p>
+                <div class="center-text">
+                    <div class="column">
+                        <video class="column" style="height: 200px; width: 220px; padding: 20px;" controls>Your browser does not support the &lt;video&gt; tag.
+                            <source src="https://grace-gardner.github.io/pahina/TutorialVideo.mp4"/></video>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="center-text">
-        <div>
-        <p>Once you have copied the code, you can open the html file in your text editor and replace the contents with your own.</p>
-            <div class="center-text">
-                <div class="column">
-                    <video class="column" style="height: 200px; width: 220px; padding: 20px;" controls>Your browser does not support the &lt;video&gt; tag.
-                        <source src="https://grace-gardner.github.io/pahina/tutorialvideo2.mp4"/></video>
-                </div>          
+        <div class="center-text">
+            <div>
+            <p>Once you have copied the code, you can open the html file in your text editor and replace the contents with your own.</p>
+                <div class="center-text">
+                    <div class="column">
+                        <video class="column" style="height: 200px; width: 220px; padding: 20px;" controls>Your browser does not support the &lt;video&gt; tag.
+                            <source src="https://grace-gardner.github.io/pahina/tutorialvideo2.mp4"/></video>
+                    </div>          
+                </div>
             </div>
         </div>
+            <div class="button1 center-text">
+                    <a href="#default" class="button to-top" title="Back to top of page">
+                        <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.-->                
+                </a>
+            </div>
+            
+        </div>
     </div>
-    <div class="button1 center-text">
-            <a href="#default" class="button to-top" title="Back to top of page">
-                <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.-->                
-        </a>
-    </div>
-        
-    </div>
-</section>
+
 
     
 
 
 <footer style="background-color: dimgrey;">
+    <div class="content">
+        <p class="final-note" style="text-align: center;">&copy;2021 Pahina. All rights reserved.</p>
+    </div>
         
-            <p class="final-note" style="text-align: center;">&copy;2021 Pahina. All rights reserved.</p>
+            
     
     </footer>
   
