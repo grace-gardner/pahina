@@ -1,9 +1,11 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
 <title>Pahina</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://kit.fontawesome.com/fd14e678e6.js" crossorigin="anonymous"></script>
 <style>
 
     html {
@@ -12,6 +14,11 @@
 
     body{
         background-image: url(whitebackground.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; position: relative;
+    }
+
+    h3, p {
+        color: darkgoldenrod;
+        font-weight: 800;
     }
 
     @media screen and (max-width: 1100px) {
@@ -55,6 +62,18 @@
             text-align: left;
         }
     }
+    .social-menu a{
+    padding: 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+    .social-menu a:hover{
+    background-color: #1e2bbd;
+}
+
+
+
              .menu{
             font-family: "lato", sans-serif;
             text-transform: uppercase;
@@ -234,80 +253,12 @@
                 color: darkgoldenrod;}
             100%{
                 color: dimgrey;}
-            
         }
-           footer{
-            background-color: dimgray;
-            color:black;
-            padding: 15px;
-        }
+           
     
-        .footer-menu{
-            list-style-type: none;
-            float: left;
-            margin: 10px 0;
-            padding: 0;
-        }
-        .footer-menu li{
-            float: left;
-            margin: 5px 8px;
-        }
-        .footer-menu a{
-            text-transform: uppercase;
-            color: black;
-            text-decoration: none;
-            border-bottom: 2px solid darkgoldenrod;
-            transition: color 1s ease-out border, border-color 2s ease-out;
-        }
-        .footer-menu a:hover{
-            color: aliceblue;
-            border-color: aliceblue;
-        }
-        .social-menu{
-            list-style-type: none;
-            float: right;
-            margin: 10px 0;
-            padding: 0;
-        }
-        .social-menu li{
-            float: right;
-            margin: 5px 8px;
-            
-        }
-        .social-menu a{
-            text-transform: uppercase;
-            color: black;
-            text-decoration: none;
-            border-bottom: 2px solid darkgoldenrod;
-            transition: color 1s ease-out border, border-color 2s ease-out;
-            
-        }
-        .social-menu a:hover{
-            color: aliceblue;
-            border-color: aliceblue;
-            
-        }
-        footer p{
-            text-align: center;
-            
-            
-        }
+   
     
-    p {
-        
-        font-weight: 600;
-        margin-top: 500;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 100px;
-    }
-    .url {
-        background: rgb(0, 0, 0);
-        background: rgba(0, 0, 0, 0.5);
-    }
-        
-    
-    img:hover {
+img:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
 
@@ -328,16 +279,8 @@
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-@media screen and (max-width:500px){
-    .social-menu{
-    float: left;
-    display: block;
-    position: relative;}
-}
-@media screen and (max-width:500){
-    .final-note{
-    float: none;}
-}
+
+
 
 /* RESPONSIVENESS */
 
@@ -369,8 +312,23 @@
 
 <body style="background-image: url(whitebackground.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
  <header id="default" id="#default">
-    <div class="header" style="overflow: hidden; background-color: dimgrey; padding: 20px 10px;"><img src="https://grace-gardner.github.io/pahina/20210228_093058.png" style="float: left; width: 65px; display: inline-block; border: 2px solid darkgoldenrod; border-radius: 14px;"/>
+    <div class="header" style="overflow: hidden; background-color: none; padding: 20px 10px;"><img src="https://grace-gardner.github.io/pahina/20210228_093058.png" style="float: left; width: 65px; display: inline-block; border: 2px solid darkgoldenrod; border-radius: 14px;"/>
         <a href="#default" style="float: left; color: darkgoldenrod; text-align: center; padding: 12px; text-decoration: none; font-size: 25px; line-height: 25px; border-radius: 4px;">Grace Gardner</a>
+        <!-------------------------------------------------------------------------------------------------------------------------->
+        <ul class="social-menu" style="padding: 0; list-style-type: none; margin: 7px 0;">
+                    <li style="float: right; margin: 0 2px;">
+                        <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-square" style="color: dimgrey;"></i></a>
+                        
+                    </li>
+                    <li style="float: right; margin: 0 2px;">
+                        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram-square" style="color: dimgrey;"></i></a>
+                            
+                    </li>
+                    <li style="float: right; margin: 0 2px;">
+                        <a href="#" target="_blank" title="Tweeter"><i class="fab fa-twitter-square" style="color: dimgrey;"></i></a>
+                            
+                    </li>
+        </ul>
     </div>
 </header>
 
@@ -399,15 +357,16 @@
             
     </nav>
     </div>
-    
-    
 </section>
-
-<section></section>
+    
     
 
-<section id="why" id="#why">
-    <div class="center-text" style="height: 100vh;">
+
+
+    
+
+<section id="why" id="#why" style="height: 100vh; background-image: url(turkey.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <div class="center-text">
         <div>
         <h3 style="text-align: center;">Why</h3>
         <p style="text-align: center;">Whoops! Sorry, this page is still under construction...</p>
@@ -421,10 +380,11 @@
     </div>
 </section>
 
-<section></section>
+
+
    
-<section id="inspire-me" id="#inspire-me">
-    <div class="center-text" style="height: 100vh;">
+<section id="inspire-me" id="#inspire-me" style="height: 100vh; background-image: url(cyprus.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <div class="center-text">
         <div class="center-text">
             <div>
             <h3 style="text-align: center;">Inspire Me</h3>
@@ -453,73 +413,58 @@
             </div>
         </div>
     </div>
-    
-   
-   
-    
+</div>
+</div>
 </section>
+    
+   
+   
+    
 
-<section style="height: 100vh;"></section> <!------------------------------------------------------------------------------------->
 
-<section id="show-me" id="#show-me" style="height: 100vh;">
-    <div class="center-text">
+<!------------------------------------------------------------------------------------->
+
+<section id="show-me" id="#show-me" style="height: 130vh; background-image: url(boracay.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <div>
+        <div class="center-text">
         <div>
         <h3 style="text-align: center;">Show Me</h3>
         <p style="text-align: center;">Below are tutorial videos of how you can copy and recreat the web page.</p>
             <div class="center-text">
                 <div class="column">
                     <video class="column" style="height: 200px; width: 220px; padding: 20px;" controls>Your browser does not support the &lt;video&gt; tag.
-  <source src="https://grace-gardner.github.io/pahina/TutorialVideo.mp4"/>
-</video>
-  
+                        <source src="https://grace-gardner.github.io/pahina/TutorialVideo.mp4"/></video>
                 </div>
-            
             </div>
-</section>
-<section style="height: 5px;"></section>
-<section>
-    <div class="center-text">
-        <p>Once you have copied the code, you can open the html file in your text editor and replace the contents with your own.</p>
-        
+        </div>
     </div>
+    <div class="center-text">
+        <div>
+        <p>Once you have copied the code, you can open the html file in your text editor and replace the contents with your own.</p>
             <div class="center-text">
                 <div class="column">
                     <video class="column" style="height: 200px; width: 220px; padding: 20px;" controls>Your browser does not support the &lt;video&gt; tag.
-  <source src="https://grace-gardner.github.io/pahina/tutorialvideo2.mp4"/>
-</video>
-  
-                </div>
-            
+                        <source src="https://grace-gardner.github.io/pahina/tutorialvideo2.mp4"/></video>
+                </div>          
+            </div>
         </div>
-        <div class="button1 center-text" >
+    </div>
+    <div class="button1 center-text">
             <a href="#default" class="button to-top" title="Back to top of page">
                 <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.-->                
         </a>
-        </div>
     </div>
-</div>
+        
+    </div>
 </section>
+
     
 
- 
- 
-<footer>
-        <div class="content wide">
-            <div class="row">
-                <ul class="footer-menu">
-                    <li>
-                        <a href="https://grace-gardner.github.io/cartoon-hero/test.html" target="_blank">Blog</a>
-                    </li>
-                </ul>
-                <ul class="social-menu">
-                    <li>
-                        <a href="https://www.facebook.com/My-HTML-and-CSS-Coding-Journal-110332504444278" target="_blank" title="facebook">Facebook</a>
-                    </li>
-                </ul>
-                
-            </div>
-            <p class="final-note">&copy;2021 Pahina. All rights reserved.</p>
-        </div>
+
+<footer style="background-color: dimgrey;">
+        
+            <p class="final-note" style="text-align: center;">&copy;2021 Pahina. All rights reserved.</p>
+    
     </footer>
   
    
