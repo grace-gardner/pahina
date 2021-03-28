@@ -112,6 +112,16 @@ h1, p {
 	color: black;
 }
 
+.product-image{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 160px;
+	margin: 0 auto;
+	text-align: center; 
+	font-family: arial; 
+	padding: 15px; 
+	display: block;
+}
+
 
 
 .footer-menu a{
@@ -163,10 +173,7 @@ h1, p {
 /* RESPONSIVENESS */
 
 @media only screen and (max-width: 1400) {
-	.card{
-		float: left ;
-		display: block;
-	}
+	
 	
     
 } /* BREAK */
@@ -178,9 +185,7 @@ h1, p {
 } /* BREAK */
 
 @media only screen and (max-width: 350px) {
-	.shop{
-		font-size: 10px;
-	}
+	
 	
 	
     
@@ -211,7 +216,7 @@ h1, p {
 	<section id="about" id="#about" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://grace-gardner.github.io/template1/headerbackground.jpg); height: 100vh; background-position: center; background-repeat: no-repeat;background-size: cover; position: relative; background-color: black;">
 		<div>
 			<div class="div-content">
-				<h1 style="color: white; text-align: center;">About the Company</h1>
+				<h1 style="color: white; text-align: center;">About Us</h1>
 			</div>
 			<div class="div-content">
 				<p style="color: white; text-align: center;">Here you can add details about your company</p>
@@ -228,65 +233,31 @@ h1, p {
 		
 			<div>
 				<div style="color: white; text-align: center; background-color: dimgrey;">
-	    		<h1 style="font-size:20px; padding-top: 10px; height: ; color: black;">Add Images of your products</h1>
-	    		<p style="color: black;">You can also add animation to your images like below, the images shake when you hover over them...</p>
+	    		<h1 style="font-size:20px; padding-top: 10px; height: ; color: black;">Our Products</h1>
+	    		<p style="color: black;"></p>
 				</div>
 	  		
 	    	<div class="div-content">
 	    		
-	    			<div class="card" class="shop" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);width: 25%;margin: 0 auto;text-align: center; font-family: arial; padding: 15px; display: inline-block;">
+	    			<div class="product-image">
 		  				<img src="https://grace-gardner.github.io/template1/headerbackground.jpg" alt="product-image" style="width:100%">
-		  				<h1 class="shop">Product Name</h1>
-		  				<p class="price" style="color: grey;
-		  font-size: 22px;">£0.00</p>
-		  				<p style="color: black;">Product Description.</p>
-		  				<p><button style="border: none;
-		  outline: 0;
-		  padding: 12px;
-		  color: white;
-		  background-color: #000;
-		  text-align: center;
-		  cursor: pointer;
-		  width: 100%;
-		  font-size: 18px;">Add to Cart</button></p>
-  					</div><div class="card" class="shop" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	  width: 25%;
-	  margin:0 auto;
-	  text-align:center;
-	  font-family: arial; padding: 15px; display: inline-block;">
+		  				<p class="price" style="color: grey;font-size: 12px;">£0.00</p>
+		  				<p style="color: black; font-size: 12px;">Product Description.</p>
+		  				
+  					</div>
+
+  					<div class="product-image">
 		  				<img src="https://grace-gardner.github.io/template1/headerbackground.jpg" alt="product-image" style="width:100%">
-		  				<h1 class="shop">Product Name</h1>
-		  				<p class="price" style="color: grey;
-		  font-size: 22px;">£0.00</p>
-		  				<p>Product Description.</p>
-		  				<p><button style="border: none;
-		  outline: 0;
-		  padding: 12px;
-		  color: white;
-		  background-color: #000;
-		  text-align: center;
-		  cursor: pointer;
-		  width: 100%;
-		  font-size: 18px;">Add to Cart</button></p>
-	  				</div><div class="card" class="shop" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	  width: 25%;
-	  margin:0 auto;
-	  text-align: center;
-	  font-family: arial; padding: 15px; display: inline-block;">
+		  				<p class="price" style="color: grey;font-size: 12px;">£0.00</p>
+		  				<p style="color: black; font-size: 12px;">Product Description.</p>
+		  				
+	  				</div>
+
+	  				<div class="product-image">
 		  				<img src="https://grace-gardner.github.io/template1/headerbackground.jpg" alt="product-image" style="width:100%">
-		  				<h1 class="shop">Product Name</h1>
-		  				<p class="price" style="color: grey;
-		  font-size: 22px;">£0.00</p>
-		  				<p>Product Description.</p>
-		  				<p><button style="border: none;
-		  outline: 0;
-		  padding: 12px;
-		  color: white;
-		  background-color: #000;
-		  text-align: center;
-		  cursor: pointer;
-		  width: 100%;
-		  font-size: 18px;">Add to Cart</button></p>
+		  				<p class="price" style="color: grey;font-size: 12px;">£0.00</p>
+		  				<p style="color: black; font-size: 12px;">Product Description.</p>
+		  				
 	  				</div>
 	  				
 	  				
@@ -306,7 +277,7 @@ h1, p {
 		<div>
 	  		<div style="color: white; text-align: center; background-color: dimgrey;">
 	    		<h1 style="font-size:20px; padding-top: 10px; height: ; color: black;">Contact Us</h1>
-	    		<p style="color: black;">Add your Company address, phone number, email address etc... </p>
+	    		<p style="color: black;"></p>
 	    	</div>
 	    	<div>
 	    		<div class="div-content">
