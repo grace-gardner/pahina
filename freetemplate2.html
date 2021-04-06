@@ -80,14 +80,31 @@
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
+
+	 a:hover{
+		background-color: #DFE3E8;
+		text-decoration: none;
+		color: black;
+	}
+
+	a{
+		box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
+		color: black;
+	}
+
+	footer{
+		text-align: center;
+		justify-content: center;
+		vertical-align: center;
+	}
 </style>
 <body>
 
 	<nav>
 		<ul>
-			<li>About</li>
-			<li>Portfolio</li>
-			<li>Contact</li>
+			<li><a href="#about" target="">About</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
 
@@ -117,7 +134,7 @@
 		</div>
 	</header>
 
-	<section class="sections">
+	<section id="about" id="#about" class="sections">
 		<div class="about-me">
 			<h2>About Me</h2>
 			<p>Sample text. Lorem Ipsum</p><br>
@@ -131,11 +148,11 @@
 	
 
 
-	<section class="sections">
-		<div class="container">
+	<section id="portfolio" id="#portfolio" class="sections">
+		<div class="container" id="#portfolio">
 			<div class="row">
 				<div class="col-sm">
-					<h2>Project 1</h2>
+					<h2>Portfolio 1</h2>
 					<p>Enter details here. Sample text. Lorem Ipsum</p><br>
 					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia purus vitae molestie pharetra. Morbi dignissim ipsum sed commodo vulputate. Ut elementum diam ante, nec lacinia metus ullamcorper et. Ut ut congue dui. Fusce placerat, ipsum sed commodo euismod, nisi ante cursus dolor, ut pulvinar tortor ex at dolor. Integer dictum ipsum nibh. Nam nec enim nibh. Vestibulum sapien purus, tincidunt bibendum nulla a, fermentum mattis leo. Vivamus vel elit quis purus euismod maximus sed quis metus. Mauris volutpat, tortor eu venenatis commodo, diam risus fringilla neque, vel vulputate felis turpis non turpis. Fusce rhoncus risus lacus, in hendrerit velit mollis a."</p>
 					<a class="button" href="View">View</a>
@@ -162,7 +179,7 @@
 					</figure>
 				</div>
 				<div class="col-sm">
-					<h2>Project 2</h2>
+					<h2>Portfolio 2</h2>
 					<p>Enter details here. Sample text. Lorem Ipsum</p><br>
 					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia purus vitae molestie pharetra. Morbi dignissim ipsum sed commodo vulputate. Ut elementum diam ante, nec lacinia metus ullamcorper et. Ut ut congue dui. Fusce placerat, ipsum sed commodo euismod, nisi ante cursus dolor, ut pulvinar tortor ex at dolor. Integer dictum ipsum nibh. Nam nec enim nibh. Vestibulum sapien purus, tincidunt bibendum nulla a, fermentum mattis leo. Vivamus vel elit quis purus euismod maximus sed quis metus. Mauris volutpat, tortor eu venenatis commodo, diam risus fringilla neque, vel vulputate felis turpis non turpis. Fusce rhoncus risus lacus, in hendrerit velit mollis a."</p>
 					<a class="button" href="View">View</a>
@@ -173,11 +190,11 @@
 	</section>
 
 
-	<section class="sections">
+	<section id="contact" id="#contact" class="sections">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm">
-					<h2>Project 3</h2>
+					<h2>Portfolio 3</h2>
 					<p>Enter details here. Sample text. Lorem Ipsum</p><br>
 					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia purus vitae molestie pharetra. Morbi dignissim ipsum sed commodo vulputate. Ut elementum diam ante, nec lacinia metus ullamcorper et. Ut ut congue dui. Fusce placerat, ipsum sed commodo euismod, nisi ante cursus dolor, ut pulvinar tortor ex at dolor. Integer dictum ipsum nibh. Nam nec enim nibh. Vestibulum sapien purus, tincidunt bibendum nulla a, fermentum mattis leo. Vivamus vel elit quis purus euismod maximus sed quis metus. Mauris volutpat, tortor eu venenatis commodo, diam risus fringilla neque, vel vulputate felis turpis non turpis. Fusce rhoncus risus lacus, in hendrerit velit mollis a."</p>
 					<a class="button" href="View">View</a>
@@ -195,6 +212,18 @@
 
 	<footer>
 		<h2>Get in touch</h2>
+		<ul class="social-menu" style="padding: 0; list-style-type: none; margin: 7px 0;">
+                <li style="float: none; margin: 0 2px; display: inline-block;">
+                    <a href="#default" target="" title="Facebook"><i class="fab fa-facebook-square" style="color: dimgrey;"></i></a>
+                </li>
+                <li style="float: none; margin: 0 2px; display: inline-block;">
+                    <a href="#default" target="" title="Instagram"><i class="fab fa-instagram-square" style="color: dimgrey;"></i></a>
+                </li>
+                <li style="float: none; margin: 0 2px; display: inline-block;">
+                    <a href="#default" target="" title="Tweeter"><i class="fab fa-twitter-square" style="color: dimgrey;"></i></a>
+                </li>
+            </ul>
+        <p>Email me: janedoe@email.com</p>
 	</footer>
    
 
