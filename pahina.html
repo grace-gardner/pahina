@@ -330,17 +330,31 @@
     padding: 0 20px;
     box-sizing: border-box;
     position: relative;
-    animation: move 2s infinite;
-    animation-direction: alternate-reverse;
+    
 
 }
+.move{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: relative;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: ; 
+}
+
+
 
     
 
-/* @keyframes move{
-        from {left: 0px;}
-        to {left: 30px;}
-    }*/
+@keyframes move{
+        0%   {left:0px; top:0px;}
+        25%  {left:50px; top:0px;}
+        50%  {left:70px; top:100px;}
+        75%  {left:0px; top:100px;}
+        100% {left:0px; top:0px;}
+    }
 
 
 
@@ -533,8 +547,9 @@
 <section>
     <div class="container">
         <div>
-            <p style="text-align: center; padding-top: 30px;">More web designs are available on my Facebook page<a href="https://www.facebook.com/Free-Web-Designs-110332504444278/" target="_blank" title="Facebook"><br><i class="fab fa-facebook-square" style="color: dimgrey;"></i></a></p><br>
-            <p style="text-align: center; padding-top: 30px;">Or if you would like to learn more about HTML and CSS coding, please vist my <a href="https://grace-gardner.github.io/cartoon-hero/test.html">Blog</a> for more tutorial videos</p>
+            <p style="text-align: center; padding-top: 30px;">More web designs are available on my Facebook page</p><br>
+            <div class="move" style="text-align: center; margin: 0 auto;"><a href="https://www.facebook.com/Free-Web-Designs-110332504444278/" target="_blank" title="Facebook"><br><i class="fab fa-facebook-square" style="color: dimgrey;"></i></a></div>
+            <p style="text-align: center; padding-top: 30px;">Or if you would like to learn more about HTML and CSS coding, please visit my <a href="https://grace-gardner.github.io/cartoon-hero/test.html">Blog</a> for more tutorial videos</p>
 
             
         </div>
