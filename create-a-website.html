@@ -50,7 +50,7 @@
 			color: #a29ba3;
 		}
 		figcaption{
-			font-size: 12px;
+			font-size: 10px;
 		}
 		#sign-up{
 			background-image: url(desk.jpg);
@@ -71,6 +71,50 @@
 		h2, h3{
 			color: #bfbfbf;
 		}
+		#ideas{
+			display: flex;
+			padding: 15px;
+
+
+		}
+		#ideas img{
+			width: 100%;
+			height: 100%;
+
+		}
+		.relative{
+			position: relative;
+
+		}
+		.category{
+			position: absolute;
+			top: 20px;
+			width: 100%;
+			text-align: center;
+			padding: 5px 0;
+
+		}
+		.middle{
+			margin: 0 15px;
+
+		}
+		.last-box{
+			padding-right: 12px;
+		}
+
+		footer{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #ede4e4;
+			padding: 20px;
+
+
+		}
+		footer img{
+			max-width: 80px;
+		}
+
 
 	</style>
 
@@ -85,11 +129,10 @@
 			</div>
 			<div>
 				<a href="https://pixabay.com/users/alexey_hulsov-388655/" target="_blank">
-					<img src="monogramlogo.jpg">
-					
+					<img src="monogramlogo.jpg">	
 				</a>
 					
-				<h1>Create & Design your own Website</h1>
+				<h1>MaryG Designs</h1>
 			</div>
 			<div>
 				<ul>
@@ -113,23 +156,37 @@
 		</section>
 		<figcaption>Image by <a href="https://pixabay.com/users/rahu-4725201/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2906159">Rahul Yadav</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2906159">Pixabay</a></figcaption>
 
-		<section>
-			<div>
+		<section id="ideas">
+			<div class="relative">
 				<img src="laptop.jpg" alt="laptop image">
 				<figcaption>Image by <a href="https://pixabay.com/users/teefarm-199315/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2443052">TeeFarm</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2443052">Pixabay</a></figcaption>
-				<h3>Why?</h3>
+				<h3 class="category">Why?</h3>
 			</div>
-			<div>
+			<div class="relative middle">
 				<img src="code.jpg" alt="code image">
 				<figcaption>Image by <a href="https://pixabay.com/users/jamesmarkosborne-1640589/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1076536">James Osborne</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1076536">Pixabay</a></figcaption>
-				<h3>How?</h3>
+				<h3 class="category">How?</h3>
 			</div>
-			<div>
+			<div class="relative">
 				<img src="binary.jpg" alt="binary code image">
 				<figcaption>Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=909710">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=909710">Pixabay</a></figcaption>
-				<h3>Show Me</h3>
+				<h3 class="category">Show Me</h3>
 			</div>
 		</section>
+
+		<footer>
+			<img src="cheers.jpg" alt="cheers!"><figcaption>Image by <a href="https://pixabay.com/users/lillycantabile-8561101/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3312361">LillyCantabile</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3312361">Pixabay</a></figcaption>
+			<nav>
+				<ul>
+					<li><a href="">About</a></li>
+					<span>&#45;</span>
+					<li><a href="">Why</a></li>
+					<span>&#45;</span>
+					<li><a href="">How</a></li>
+					
+				</ul>
+			</nav>
+		</footer>
 
 
 
