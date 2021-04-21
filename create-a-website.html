@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
@@ -6,194 +14,852 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://kit.fontawesome.com/fd14e678e6.js" crossorigin="anonymous"></script>
-	<style>
-		html{
-			background-color: white;
-		}
-		body{
-			font-family: New Tegomin, Georgia, sans-serif;
-			font-size: 18px;
-			background-color: #ede4e4;
-			width: 960px;
-			margin: 0 auto 0 auto;
-		}
-		header{
-			display: flex;
-			height: 150px;
-		}
-		header > div{
-			flex: 1;
-			text-align: center;
-			align-self: flex-end;
+<style>
 
-		}
-		li{
-			display: inline;
-		}
-		header img{
-			max-width: 80px;
-		}
-		h1{
-			margin: 10px;
-			font-size: 20px;
-		}
-		ul{
-			margin: 10px 0;
-			padding: 0;
-		}
-		a{
-			text-decoration: none;
-			color: #9607ba;
+    html {
+        scroll-behavior: smooth;
+    }
 
-		}
-		a:hover{
-			color: #a29ba3;
-		}
-		figcaption{
-			font-size: 10px;
-		}
-		#sign-up{
-			background-image: url(desk.jpg);
-			background-repeat: no-repeat;
-			background-size: cover;
-			height: 500px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
+    body{
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Georgia, sans-serif, cursive;
+    }
 
-		}
-		input[type="submit"]{
-			background-color: #cccccc;
-			padding: 5px 15px;
-			border-radius: 5px;
-		}
-		h2, h3{
-			color: #bfbfbf;
-		}
-		#ideas{
-			display: flex;
-			padding: 15px;
+    p{
+        font-weight: 400;
+    }
+
+    a{
+        font-family: Georgia, sans-serif, cursive;
+	}
 
 
-		}
-		#ideas img{
-			width: 100%;
-			height: 100%;
+
+
+    .container{
+        width: 100%;
+        max-width: 1145px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        box-sizing: border-box;
+        box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
+        position: relative;
+        background-color: ;
+    }
+    
+    .header-container{
+        width: 100%;
+        max-width: 1145px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+        position: relative;
+        box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
+        background-color: #ffae2b;
+    }
+
+
+    header img{
+        max-width: 80px;
+    }
+
+    input[type="submit"]{
+            background-color: #cccccc;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+    h2, h3{
+        color: #bfbfbf;
+        }
+    h3{
+        font-size: 15px;
+    }
+
+
+
+    /* BEGIN @MEDIA SCREEN RESPONSIVENESS */
+
+    @media screen and (max-width: 1400px) {
+        .last-button {
+            display: none;}
+
+            
+        .replacement-menu{
+            display: none;}
+            
+    } /* End of media screen 1400px */
+
+
+    @media only screen and (max-width: 1024px) {
+        .header a {
+            float: left;
+            display: block;
+            text-align: left;
+            text-decoration: none;
+            color: darkgoldenrod;}
+
+
+        .header-right {
+            float: left;}
+
+
+        .header-right a{
+            text-decoration: none;
+            color: darkgoldenrod;}
+
+        .social-menu{
+            float: left;
+            display: block;}
+
+        .column{
+            float: left;
+            display: block;
+        }
+
+            
+        .replacement-menu{
+            display: none;}
+
+
+    } /* end of media screen 1024px */
+
+    @media only screen and (max-width: 780px) {
+        .header a {
+            float: left;
+            display: block;
+            text-align: left;
+            text-decoration: none;
+            color: darkgoldenrod;}
+
+
+        .header-right {
+            float: left;}
+
+
+        .header-right a{
+            text-decoration: none;
+            color: darkgoldenrod;}
+
+        .social-menu{
+            float: left;
+            display: block;}
+
+        
+        .replacement-menu{
+            display: none;}
+            
+    } /* end of media screen 780px */
+
+    @media only screen and (max-width: 465px) {
+        .column{
+            display: left;}
+
+        .header a{
+            display: block;}
+
+        .header-right{
+            display: block;}
+
+        .header-right a{
+            display: block;}
+
+        .social-menu{
+            display: block;}
+
+        
+        .intro-menu{
+            display: none;}
+
+        .replacement-menu{
+            display: block;}
+            
+ } /* end of media screen 465px */
+
+    @media only screen and (max-width: 325px){
+        a.default{
+            font-size: 12px;
+            text-align: ; 
+            padding-top: 0px; 
+            padding-left: 0px; 
+            text-decoration: none;  
+            border-radius: 0px;
+            width: 12px;
+           
+        }
+        .logo-link{
+            float: none; 
+            width: 25px; 
+            display: flex;
+            margin: 0 auto;
+        }
+        .header{
+            overflow: hidden; 
+            background-color: none; 
+            padding: 0px 0px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            justify-content: center;
+        }
+
+
+        
+
+        .logo-small{
+            width: 75px;
+            margin: 0 auto;
+            display: block;
+
+        }
+    }
+
+    @media only screen and (max-width: 300px){
+        .container {
+            display: none;}
+        
+        .header-container{
+            display: none;}
+    }
+
+    /* ----END OF RESPONSIVENESS------------- */
+
+
+    .social-menu a{
+        padding: 10px;
+        display: inline-block;
+        border-radius: 20px;}
+
+    .social-menu a:hover{
+        background-color: #1e2bbd;}
+
+
+
+     .menu{
+        font-family: "lato", sans-serif;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;}
+
+
+    .menu ul{
+        list-style-type:none;
+        padding: 1px;
+        margin: 0;}
+
+    .menu li{
+        display: inline-block;
+        margin: 80px 0px 0px 190p;
+        align-items: center;
+        justify-content: center;}
+
+    .menu a{
+        font-size: 10px;
+        font-weight: 400;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        color: #ffffff;
+        overflow: hidden;}
+
+    .menu a span{
+        position: relative;
+        display: inline-block;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 40px;
+        transition: top .5s ease-out;
+        top: 0;
+        animation-name: flip;
+        animation-duration: 2s;
+        animation-timing-function:ease-in-out;
+        animation-iteration-count:infinite;}
+
+    @keyframes flip{
+        0%{
+            color: floralwhite;}
+        25%{
+            color: darkgray;}
+        50%{
+            color:burlywood;}
+        75%{
+            color: darkgoldenrod;}
+        100%{
+            color: dimgrey;}
+        }
+
+
+    .menu .default{
+        background-color: black;
+        border: 1px solid #555;
+        border-top-color:darkgoldenrod;
+        display: inline-block;}
+
+    .menu a:hover .default{
+            top: 41px;}
+
+    .menu .over{
+        position: absolute;
+        left: 0;
+        top: -41px;
+        background-color: darkgoldenrod;
+        border: 1px solid darkgoldenrod;}
+
+    .menu a:hover .over{
+            top: 0;}
+
+
+
+
+    .button{
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        margin: 10px;
+        padding: 10px 20px;
+        display: inline-block;
+        position: relative;
+        border-radius: 3px;}
+
+
+
+
+    .button.to-top{
+            color: white;
+            background-color: black;
+            padding: 5px 12px 5px 2px;
+            border-radius: 3px;
+            background-color: black;
+            border: 1px solid darkgoldenrod;}
+
+    .button .arrows:before{
+            content:"\00BB";}
+
+    .button .arrows{
+            font-size: 10px;
+            display: inline-block;
+            transform: rotate(270deg);
+            line-height: 20px;
+            vertical-align: middle;
+            margin-left: 9px;}
+    .button1 a span{
+            animation-name: flash;
+            animation-duration: 2s;
+            animation-timing-function:ease-in-out;
+            animation-iteration-count:infinite;}
+
+    @keyframes flash{
+        0%{
+            color: aliceblue;}
+        25%{
+            color: darkgray;}
+        50%{
+            color:burlywood;}
+        75%{
+            color: darkgoldenrod;}
+        100%{
+            color: dimgrey;}
+        }
+
+        img{
+            animation-name: flash;
+            animation-duration: 2s;
+            animation-timing-function:ease-in-out;
+            animation-iteration-count:infinite;}
+
+        }
+
+    
+
+
+
+
+    /*img:hover {
+      /* Start the shake animation and make the animation last for 0.5 seconds */
+      animation: shake 0.5s;
+
+      /* When the animation is finished, start again */
+      animation-iteration-count: infinite;
+    }
+
+    /*@keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { transform: translate(-3px, 0px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }*/
+
+    
+
+    
+
+}
+.move{
+    width: 50px;
+    height: 50px;
+    background-color: ;
+    position: relative;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: ; 
+}
+
+
+
+    
+
+@keyframes move{
+        0%   {left:0px; top:0px;}
+        25%  {left:100px; top:0px;}
+        50%  {left:70px; top:50px;}
+        75%  {left:0px; top:50px;}
+        100% {left:0px; top:0px;}
+    }
+figcaption{
+    font-size: 10px;
+}
+
+        
+        #sign-up{
+            background-image: url();
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 auto;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        input[type="submit"]{
+            background-color: #cccccc;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+    
+
+    	.div-content{
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
 
 		}
-		.relative{
-			position: relative;
-
+		.card button:hover {
+  			opacity: 0.7;
 		}
-		.category{
-			position: absolute;
-			top: 20px;
-			width: 100%;
-			text-align: center;
-			padding: 5px 0;
+h1, p {
+    color: black;
+}
 
-		}
-		.middle{
-			margin: 0 15px;
-
-		}
-		.last-box{
-			padding-right: 12px;
-		}
-
-		footer{
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			background-color: #ede4e4;
-			padding: 20px;
+.product-image{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 140px;
+    margin: 0 auto;
+    text-align: center; 
+    font-family: arial; 
+    padding: 5px; 
+    display: block;
+}
+.empty{
+	width: 12px;
+	height: 10px;
+	color: white;
+	display: block;
+	float: right;
 
 
-		}
-		footer img{
-			max-width: 80px;
-		}
+}
+.burger-container {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.big-image{
+	background-image: url(worker.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	justify-content: center;
+	vertical-align: center;
+}
+
+#sign-up{
+            background-image: url(worker.JPG);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 auto;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+input[type="submit"]{
+            background-color: #cccccc;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }        
+
+        
 
 
-	</style>
 
-	<body>
-		<header>
-			<div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+
+
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="header" style="overflow: hidden; background-color: none; padding: 20px 10px;">
+        	<a class="default" href="#default" style="float: left; color: #5c2d2d; text-align: center; padding-top: 25px; padding-left: 25px; text-decoration: none; font-size: 25px; line-height: 25px; border-radius: 4px;">
+        		<img class="logo-small" src="rovinlogo.JPG">
+        	</a>
+        	
+        	<div class="social-menu container">
+			<nav class="menu" style="float: right;">
 				<ul>
-					<li><a href="https://grace-gardner.github.io/pahina/freetemplate1.html" target="_blank">Popular</a></li>
-					<span>&#45;</span>
-					<li><a href="https://grace-gardner.github.io/pahina/freetemplate2.html" target="_blank">What's New</a></li>	
-				</ul>
-			</div>
-			<div>
-				<a href="https://pixabay.com/users/alexey_hulsov-388655/" target="_blank">
-					<img src="monogramlogo.jpg">	
-				</a>
-					
-				<h1>MaryG Designs</h1>
-			</div>
-			<div>
-				<ul>
-					<li><a href="https://grace-gardner.github.io/pahina/freetemplate1.html" target="_blank">Submit Projects</a></li>
-					<span>&#45;</span>
-					<li><a href="https://grace-gardner.github.io/pahina/freetemplate2.html" target="_blank">Design Ideas</a></li>	
-				</ul>
-				
-			</div>
-		</header>
-
-		<section id="sign-up">
-			<h2 style="padding-top: 20px; padding-left: 15px;">Free web designs<br> at your fingertips</h2>
-			<h3>Subscribe Now!</h3>
-			<form>
-				<input type="email" aria-label="email" placeholder=" Enter your email">
-				<input type="Submit" name="">
-			</form>
-
-
-		</section>
-		<figcaption>Image by <a href="https://pixabay.com/users/rahu-4725201/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2906159">Rahul Yadav</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2906159">Pixabay</a></figcaption>
-
-		<section id="ideas">
-			<div class="relative">
-				<img src="laptop.jpg" alt="laptop image">
-				<figcaption>Image by <a href="https://pixabay.com/users/teefarm-199315/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2443052">TeeFarm</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2443052">Pixabay</a></figcaption>
-				<h3 class="category">Why?</h3>
-			</div>
-			<div class="relative middle">
-				<img src="code.jpg" alt="code image">
-				<figcaption>Image by <a href="https://pixabay.com/users/jamesmarkosborne-1640589/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1076536">James Osborne</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1076536">Pixabay</a></figcaption>
-				<h3 class="category">How?</h3>
-			</div>
-			<div class="relative">
-				<img src="binary.jpg" alt="binary code image">
-				<figcaption>Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=909710">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=909710">Pixabay</a></figcaption>
-				<h3 class="category">Show Me</h3>
-			</div>
-		</section>
-
-		<footer>
-			<img src="cheers.jpg" alt="cheers!"><figcaption>Image by <a href="https://pixabay.com/users/lillycantabile-8561101/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3312361">LillyCantabile</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3312361">Pixabay</a></figcaption>
-			<nav>
-				<ul>
-					<li><a href="">About</a></li>
-					<span>&#45;</span>
-					<li><a href="">Why</a></li>
-					<span>&#45;</span>
-					<li><a href="">How</a></li>
-					
+					<li>
+						<a href="">Home</a>
+					</li>
+					<li>
+						<a href="">About Us</a>
+					</li>
+					<li>
+						<a href="">Our Projects</a>
+					</li>
+					<li>
+						<a href="">Our Services</a>
+					</li>
+					<li>
+						<a href="">Contact Us</a>
+					</li>
 				</ul>
 			</nav>
-		</footer>
+			<div class="burger-container" onclick="myFunction(this)">
+  					<div class="bar1"></div>
+  					<div class="bar2"></div>
+  					<div class="bar3"></div>
+			</div>
+			
+			</div>
 
 
+			</div>
+	</div>
+</header>
 
+<section> <!--BIG IMAGE SECTON---------------------------------------------------------------------------->
+	<div id="sign-up" class="container">
+		<h2 style="color: #039e0b; font-size: ;">Integrity~Dedication~Pride<br></h2>
 		
-	</body>
+		
+
+		<p style="color: white; font-size: 15px;">Enquire Now!</p><br>
+		<form>
+			<input type="email" aria-label="email" placeholder=" Enter your email">
+			<input type="Submit" name="">
+		</form>
+	</div>
+</section>
+
+
+    
+
+
+
+
+
+            
+        
+    
+            
+            
+            <!--<h3>Subscribe Now!</h3>
+            <form>
+                <input type="email" aria-label="email" placeholder=" Enter your email">
+                <input type="Submit" name="">
+            </form>-->
+</section>
+
+<!--<section class="container">
+    <div class="container">
+        <h3>Subscribe Now!</h3>
+            <form>
+                <input type="email" aria-label="email" placeholder=" Enter your email">
+                <input type="Submit" name="">
+            </form>
+        
+    </div>
+    
+            
+    
+    
+</section>-->
+
+<!--<section id="why" class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); width: 100%;margin: auto;text-align: center;font-family: arial; padding: 15px;">
+                <a href="https://grace-gardner.github.io/pahina/freetemplate1.html" target="_blank">
+                    <figcaption style="color: black;">Retail Shop</figcaption>
+                    <img src="template1.JPG" alt="product-image" style="width:100%;"/>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); width: 100%;margin: auto;text-align: center;font-family: arial; padding: 15px;">
+                <a href="https://grace-gardner.github.io/pahina/freetemplate2.html" target="_blank">
+                    <figcaption style="color: black;">Freelancer</figcaption>
+                    <img src="template2.jpg" alt="product-image" style="width:100%"/>
+                </a>
+            </div>
+        <div class="col-sm">
+            <div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); width: 100%;margin: auto;text-align: center;font-family: arial; padding: 15px;">
+                <a href="https://grace-gardner.github.io/pahina/freetemplate2.html" target="_blank">
+                    <figcaption style="color: black;">Freelancer</figcaption>
+                    <img src="template2.jpg" alt="product-image" style="width:100%"/>
+                </a>
+            </div>
+        
+        </div>
+    </div>
+</div>
+</section>-->
+
+<!--<section id="shop" id="#shop">  <!--SECTION 2 - Product Images---------------------------------------------->
+        
+            <!--<div class="container">
+                <div style="color: white; text-align: center; background-color: dimgrey;">
+                <h1 style="font-size:20px; padding-top: 10px; height: ; color: black;"></h1>
+                <p style="color: black;"></p>
+                </div>
+            
+            <div class="div-content">
+                
+                    <div class="product-image">
+                        <figcaption style="color: black;">Retail Shop</figcaption>
+                        <a href="https://grace-gardner.github.io/pahina/freetemplate1.html" target="_blank">
+                            <img src="template1.JPG" alt="product-image" style="width:100%"/></a>
+                        <p class="price" style="color: grey;font-size: 12px;"></p>
+                        <a href="https://grace-gardner.github.io/pahina/freetemplate1.html" target="_blank">View Website</a>
+                        
+                    </div>
+
+                    <div class="product-image">
+                        <figcaption style="color: black;">Freelancer</figcaption>
+                        <a href="https://grace-gardner.github.io/pahina/freetemplate2.html" target="_blank">
+                            <img src="template2.jpg" alt="product-image" style="width:100%"/></a>
+                        <p class="price" style="color: grey;font-size: 12px;"></p>
+                        <a href="https://grace-gardner.github.io/pahina/freetemplate2.html" target="_blank">View Website</a>
+                        
+                    </div>
+
+                    <div class="product-image">
+                        <figcaption style="color: black;">Bakery</figcaption>
+                        <a href="https://grace-gardner.github.io/pahina/freetemplate3.html" target="_blank">
+                            <img src="template3.JPG.jpeg" alt="product-image" style="width:100%;"/></a>
+                        <p class="price" style="color: grey;font-size: 12px;"></p> 
+                        <a href="https://grace-gardner.github.io/pahina/freetemplate3.html" target="_blank">View Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div style="color: white; text-align: center; background-color: dimgrey;">
+                <h1 style="font-size:20px; padding-top: 10px; height: ; color: black;"></h1>
+                <p style="color: black;"></p>
+                </div>
+            </div>
+</section>
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+    <div class="container">
+        <div>
+            <p style="text-align: center; padding-top: 30px;">Follow me on Facebook for more free web designs</p>
+        </div>
+
+        <div class="container">
+            <div>
+                <div class="move" style="text-align: center; margin: 0 auto;"><a href="https://www.facebook.com/Free-Web-Designs-110332504444278/" target="_blank" title="Facebook"><br><i class="fab fa-facebook-square" style="color: dimgrey;"></i></a></div>
+            </div>
+        </div>
+        <div>
+            <p style="text-align: center; padding-top: 30px;">No idea how to create a website? Visit my <a href="https://grace-gardner.github.io/pahina/untitled.html" title="Blog" target="_blank" style="color: #5c2d2d; "><b>Blog</b></a> for tutorial videos on how <i>you</i> can recreate and copy these designs for free!</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<footer>
+    <div class="container">
+        <div>
+            <p class="final-note" style="text-align: center;"><span style="color: #5c2d2d;">&copy;</span>2021 Pahina. All rights reserved.</p>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+</body>
 </html>
-
-
-
-
