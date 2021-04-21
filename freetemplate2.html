@@ -22,8 +22,13 @@
 		margin: 0;
 		padding: 0;
 	}
-	h1, h2, p, ul li{
+	.container h1, h2, p, ul li{
 		font-family: New Tegomin, sans-serif;
+		color: silver;
+		text-align: center;
+	}
+	p{
+		color: black;
 	}
 
 	img{
@@ -61,6 +66,17 @@
 
 	figcaption{
 		font-size: 10px;
+	}
+
+	header{
+		background-image: url(headerpic.jpg); 
+		background-size: contain; 
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+		background-color: black; 
+		height: 100vh; 
+		width: 100%;"
 	}
 	
 	
@@ -115,27 +131,17 @@
 	</nav>
 
 
-	<header style="background-image: url(headerbackground4.JPG); background-size: cover; background-repeat: no-repeat;">
+	<header>
 		<div class="container">
-			<div class="row">
-
-				<div class="col-sm">
-					<h1>Hi, I'm Grace<br> I'm a professional<br> Event Planner</h1>
-					<p>I specialise in:</p>
-					<ul>
-						<li>Weddings</li>
-						<li>Birthdays</li>
-						<li>and much more!</li>
-						
-					</ul>
-					<a class="button" href="">Follow me on Facebook</a>
+			<div>
+				<h1>Hi, I'm Grace<br> I'm a professional<br> Event Planner</h1>
+				<p>I specialise in:</p>
+				<ul>
+					<li>Weddings</li>
+					<li>&</li>
+					<li>Birthdays</li>
 					
-				</div>
-
-				<div class="col-sm">
-					<img class="intro-image" src="https://images.unsplash.com/photo-1614212547684-2b4843b0f1a8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTI4fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Jane Doe"/>
-					<figcaption>Unsplash.com photo</figcaption>
-				</div>
+				</ul>
 			</div>
 		</div>
 	</header>
@@ -143,9 +149,9 @@
 	<section id="about" id="#about" class="sections">
 		<div class="about-me">
 			<h2>About Me</h2>
-			<p>Sample text. Lorem Ipsum</p><br>
-			<p><blockquote>What is Lorem Ipsum?
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</blockquote></p>
+			<p>Planning and organising events are my passion and executing them perfectly is my goal. I love the excitement and the buzz of organising events, the crazier the better!</p><br>
+			<p>Wether it's a child's birthday party or a full on wedding that you're planning, I can help you achieve it. I have first-hand experiences on both. I have resources and affiliates at my disposal to make your event successful and stress-free.</p>
+			<a class="button" href="">Follow me on Facebook</a>
 	
 		</div>
 	</section>
